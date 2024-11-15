@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektrotexnika</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body id="elektrbody">
+    <div  class="ebdiv">
+        <div>
+            <h1>
+                Elektrotexnika
+            </h1>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, odio quam velit adipisci libero fugit aliquid repellendus animi dicta labore explicabo perferendis totam assumenda eveniet numquam ratione itaque. Fugiat blanditiis, enim deleniti ratione voluptatibus eius sequi. Quibusdam hic mollitia veritatis ipsum aliquid minus molestias sapiente maiores quo inventore, modi dicta autem ratione excepturi voluptatem beatae dolorem libero ab possimus. Earum cupiditate possimus blanditiis laborum sunt illo doloribus maiores quae aspernatur inventore ipsa iusto error sapiente modi sit assumenda eos ullam mollitia omnis temporibus sint, officiis nihil. Debitis veniam aperiam soluta ducimus temporibus, magni explicabo molestiae doloribus blanditiis! Nobis, hic ipsum?
+            </p>
+        </div>
+
+
+
+
+
+        <!-- Bu yerda qidirish div i joylashgan -->
+        <div class="search-container" align="center">
+            <input type="text" id="searchInput" placeholder="Qidiruv...">
+            <button id="searchBtn" onclick="searchAcrossPages()">Qidir</button>
+            <div id="results"></div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="Elektrotexnikakitoblari">
+            <div class="kitoblaruchundiv">
+                <a class="kitoblaruchunlink" href="https://t.me/elektronkutubxonafarpi/31">
+                    <img class="kitobsurati" src="./kitoblar uchun fail/Axborot o'lchov texnikasi.jpg" alt="">
+                    <p  id="elektronikakitob1" class="kitobhaqdamalumot">
+                        👤 Muallif:Axunov.Q.H <br><br>
+                        📚 Nomi:Axborot o'lchov texnikasi<br><br>
+                        📝 Turi:O'quv qo'llanma<br><br>
+                        Farg'ona 2019-yil
+                    </p>
+                </a>
+            </div>
+            <div class="kitoblaruchundiv">
+                <a class="kitoblaruchunlink" href="https://t.me/elektronkutubxonafarpi/34">
+                    <img class="kitobsurati" src="./kitoblar uchun fail/Avtomatika va ishlab chiqarish jarayonlarin.jpg" alt="">
+                    <p  id="elektronikakitob2" class="kitobhaqdamalumot">
+                        👤Muallif: N. Fayzimatov <br><br>
+                        📝Nomi: Avtomatika va ishlab <br><br>
+                         jarayonlarini avtomatlashtirish<br><br>
+                          asoslari<br><br>
+                        📚Turi: Darslik 2019 yil.
+                    </p>
+                </a>
+            </div>
+            <div class="kitoblaruchundiv">
+                <a class="kitoblaruchunlink" href="https://t.me/elektronkutubxonafarpi/44">
+                    <img class="kitobsurati" src="./kitoblar uchun fail/issiqlik texnikasi.jpg" alt="">
+                    <p  id="elektronikakitob3" class="kitobhaqdamalumot">
+                        👤Muallif: E.O'.Madaliyev <br><br>
+                        📚Kitob nomi: Issiqlik texnikasi <br><br>
+                        📝Nashr etilgan: Farg'ona 2002-yil <br><br>
+                        📕Turi: Darslik
+                    </p>
+                </a>
+            </div>
+            <div class="kitoblaruchundiv">
+                <a class="kitoblaruchunlink" href="https://t.me/elektronkutubxonafarpi/79">
+                    <img class="kitobsurati" src="./kitoblar uchun fail/elektr yuritma.jpg" alt="">
+                    <p  id="elektronikakitob4" class="kitobhaqdamalumot">
+                        👤Mualliflar: O.Xoshimov, S.Saidaxmedov <br><br>
+                        📚Kitob nomi: Elektr yuritma asoslari<br><br>
+                        📝Nashr etilgan sana: Toshkent 2010-yil<br><br>
+                        📕Turi: Darslik
+                    </p>
+                </a>
+            </div>
+            <div class="kitoblaruchundiv">
+                <a class="kitoblaruchunlink" href="https://t.me/elektronkutubxonafarpi/82">
+                    <img class="kitobsurati" src="./kitoblar uchun fail/gidroenergetika.jpg" alt="">
+                    <p  id="elektronikakitob5" class="kitobhaqdamalumot">
+                        👤Mualliflar: H.F.Shamsutdinov, <br><br>
+                        B.M.Pulatov, B.R.Normuratov<br><br>
+                        📚Kitob nomi: Gidroenergetik qurilmalar elektr qismi,<br><br>
+                         rele himoyasi va avtomatikasi<br><br>
+                        📝Nashr etilgan sana: Toshkent 2021-yil<br><br>
+                        📕Turi: O'quv qo'llanma
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="tepaboshbuton">
+            <a href="#elektrbody"><button type="button" class="btn btn-danger">Tepaga</button></a>
+            <a href="index.html"><button type="button" class="btn btn-success">Bosh sahifa</button></a>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- JS code -->
+    <script>
+        document.getElementById('searchBtn').addEventListener('click', function() {
+    let query = document.getElementById('searchInput').value;
+    if (query) {
+        alert('Qidirilmoqda: ' + query);
+        // Bu yerda qidirish funktsiyasini qo'shish mumkin
+    } else {
+        alert('Iltimos, qidirish maydoniga so\'z kiriting.');
+    }
+});
+
+
+
+
+
+// Izlash kerak bo'lgan sahifalar ro'yxati
+const pages = ["elektrotexnika.html"];
+
+function searchAcrossPages() {
+    const searchWord = document.getElementById("searchInput").value.toLowerCase();
+    const resultsContainer = document.getElementById("results");
+    resultsContainer.innerHTML = ""; // Natijalarni tozalash
+    
+    let found = false;
+    
+    pages.forEach(page => {
+        fetch(page)
+            .then(response => response.text())
+            .then(data => {
+                // Sahifani HTML sifatida yuklash va DOMga qo'shmasdan izlash
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data, "text/html");
+                
+                const paragraphs = doc.querySelectorAll("p");
+                paragraphs.forEach((paragraph, index) => {
+                    const text = paragraph.textContent.toLowerCase();
+                    if (text.includes(searchWord)) {
+                        const resultLink = document.createElement("a");
+                        
+                        // Topilgan `<p>` yoki `<div>` elementning `id`si mavjudligini tekshirish
+                        if (!paragraph.id) {
+                            paragraph.id = `result-${index}`; // Agar `id` bo'lmasa, avtomatik beriladi
+                        }
+                        
+                        resultLink.href = `${page}#${paragraph.id}`; // Sahifa va kotvka
+                        resultLink.textContent = `Natija (${page}): ${paragraph.textContent}`;
+                        resultLink.style.display = "block";
+                        resultsContainer.appendChild(resultLink);
+                        found = true;
+                    }
+                });
+                
+                if (!found) {
+                    const noResult = document.createElement("p");
+                    noResult.textContent = "Hech qanday natija topilmadi.";
+                    resultsContainer.appendChild(noResult);
+                }
+            })
+            .catch(error => console.error(`Sahifa yuklanmadi: ${page}`, error));
+    });
+}
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+body{
+    background-color: aqua;
+}
+.bosh{
+    border: 1px solid black;
+    width: 960px;
+    background-color: rgb(246, 250, 250);
+}
+
+
+.topmenu {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* boshqa elementlarning ustida turishi uchun */
+    background-color: rgb(246, 250, 250); /* asosiy fon rangi */
+}
+
+.top h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.topmenu{
+    margin-top: 50px;
+    width: 150px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    float: right;
+    justify-content: center;
+    /* align-items: start; */
+}
+
+
+
+.search-container {
+    /* display: flex; */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* text-align: center; */
+    margin: 0 320px 0 320px;
+}
+
+#searchInput {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 5px 0 0 5px;
+}
+#searchInput:hover{
+    border: 1px solid blue;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+#results{
+    width: 300px;
+    /* border: 1px solid red; */
+    /* height: 100px; */
+}
+
+#searchBtn:hover {
+    background-color: #f10707;
+}
+.categories p{
+    padding: 10px;
+}
+.categoriesh1{
+    text-align: center;
+    margin: 0 0 80px 0;
+
+    /* align-items: center; */
+}
+.categories {
+    margin-top: 100px;
+    padding-top: 100px;
+}
+.categories img {
+    width: 300px;
+    margin: 7px;
+    height: 400px;
+    border-radius: 30px;
+}
+/* .categories img:hover{} */
+
+.katchap {
+    float: left;
+}
+.katchap2 {
+    float: left;
+}
+.p1 {
+    width: 600px;
+    float: right;
+}
+.p3{
+    float: right;
+    width: 600px;
+}
+.p4{
+    width: 600px;
+}
+.id1 {
+    height: 500px;
+    width: 100%;
+}
+.ferpilogo {
+    width: 80px;
+    margin: 20px 0 0 20px;
+}
+.ferpilogo:hover{
+    width: 100px;
+    border: 1px solid blue;
+    border-radius: 200px;
+}
+
+.id2{
+    height: 500px;
+    width: 100%;
+}
+.id3{
+    height: 500px;
+    width: 100%;
+}
+.id4{
+    height: 500px;
+    width: 100%;
+}
+.info img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.info div img:hover{
+    border: 5px solid red;
+    border-radius: 60px;
+}
+.categories a img:hover{
+    border: 10px solid red;
+    border-radius: 100px;
+}
+.img1 {
+    width: 300px;
+    float: left;
+}
+.infoh1{
+    margin: 100px 0 100px 0;
+    /* color: aqua; */
+}
+i{
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+}
+.fa-twitter{
+    color: #0056b3;
+}
+.fa-instagram{
+    color: #cc4da2;
+}
+.fa-youtube{
+    color: red;
+}
+.fa-whatsapp{
+    color: green;
+}
+.pastlinklogo{
+    height: 250px;
+    /* border: 1px solid black; */
+}
+.linkofdata{
+    width: 600px;
+    /* border: 1px solid green; */
+    display: flex;
+    float: left;
+    margin: 10px;
+}
+/* .linkofdatapp{
+    border: 1px solid black;
+} */
+
+.linklogo{
+    /* border: 1px solid blue; */
+    float: right;
+}
+.linkphoto1{
+    width: 500px;
+}
+.boshiga{
+    font-size: 30px;
+    background-color: #007bff;
+    color: red;
+    border-radius: 10px;
+    margin: 20px;
+}
+.pastbosh{
+    /* border: 1px solid black; */
+    margin: 10px 10px 10px 45%;
+    padding: 10px;
+}
+
+.tepaboshbuton{
+    width: 960px;
+    height: 40px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pp{
+    padding: 10px;
+    /* width: 500px; */
+    /* border: 1px solid red; */
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+/*      Elektrotexnika  */
+
+.ebdiv{
+    background-color: white;
+    width: 960px;
+    border: 1px solid black;
+}
+
+/*     Fizika */
+
+.fbdiv{
+    width: 960px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/*     Iqtisod    */
+.ibdiv{
+    width: 960px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/*      Kimyo    */
+.kbdiv{
+    width: 960px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/*     Mexanika    */
+
+.mexbdiv{
+    width: 960px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/*     Oliy matematika   */
+.olmbdiv{
+    width: 960px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/*       Adabiyot      */
+.adadiv{
+    width: 960px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+/*       Tarih     */
+.tardiv{
+    width: 960px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/*       Arxitektura    */
+.arxidiv{
+    width: 960px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+
+
+/*    Kitoblarni joylash uchun div img p teglari uchun kod */
+
+.kitoblaruchundiv{
+    width: 960px;
+    border: 1px solid black;
+    height: 600px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+/* #kitoblaruchunlinkid{
+    width: 960px;
+    border: 1px solid black;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+} */
+
+.kitoblaruchunlink{
+    width: 960px;
+    border: 1px solid black;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.kitobsurati{
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+
+}
+
+.kitobhaqdamalumot{
+    width: 400px;
+    border: 1px solid black;
+    /* text-align: center; */
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+
